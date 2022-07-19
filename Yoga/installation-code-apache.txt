@@ -1,0 +1,10 @@
+sudo su
+yum update -y
+yum install -y httpd
+cd /var/www/html
+wget https://github.com/
+unzip main.zip
+cp -r <folder>/* /var/www/html
+rm -rf <folder>
+systemctl enable httpd
+systemctl start httpd
